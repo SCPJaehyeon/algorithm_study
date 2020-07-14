@@ -14,9 +14,9 @@ int solution(int N, int number) {
 		for (int j = 0; j < i; j++) {
 			for (auto& op1 : us[j]) {
 				for (auto& op2 : us[i - j - 1]) {
-					cout << "us[" << i << "] += (+)" << op1 + op2 << endl;
-					cout << "us[" << i << "] += (-)" << op1 - op2 << endl;
-					cout << "us[" << i << "] += (*)" << op1 * op2 << endl;
+					//cout << "us[" << i << "] += (+)" << op1 + op2 << endl;
+					//cout << "us[" << i << "] += (-)" << op1 - op2 << endl;
+					//cout << "us[" << i << "] += (*)" << op1 * op2 << endl;
 					us[i].insert(op1 + op2);
 					us[i].insert(op1 - op2);
 					us[i].insert(op1 * op2);
